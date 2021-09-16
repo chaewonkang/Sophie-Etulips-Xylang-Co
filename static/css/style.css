@@ -38,12 +38,44 @@
 
 /* TOPOF Slideshow */
 
+.arrowbox {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 30;
+	display: flex;
+	flex-direction: row;
+}
+
+.arrowbox div {
+	width: 50%;
+	height: 100%;
+	display: flex;
+}
+
+.arrowbox div:first-child {
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 20px;
+}
+
+.arrowbox div:last-child {
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 20px;
+}
+
+.arrowbox img {
+	height: 35px;
+	cursor: pointer;
+}
+
 .slideshow .floatText {
 	position: absolute;
 	z-index: 5;
 	width: 550px;
-	top: 80%;
-	left: 50px;
+	bottom: 40px;
+	left: 40px;
 	color: #fff;
 }
 
@@ -310,12 +342,14 @@
 
 .greeting_container {
 	width: 70%;
-	height: calc(100vh - 320px);
+	height: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	margin: 0 auto;
+	margin-top: 100px;
+	margin-bottom: 100px;
 	position: relative;
 }
 
@@ -345,9 +379,10 @@
 }
 
 .greeting_container .greeting_signature {
-	height: 7%;
+	height: 40px;
 	width: 100%;
 	text-align: right;
+	position: relative;
 }
 
 .greeting_container .greeting_signature span {
@@ -466,6 +501,15 @@
 
 /* ENDOF history */
 
+/* TOPOF business */
+
+.business_container {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+/* ENDOF business */
+
 
 /* TOPOF contact */
 
@@ -489,12 +533,13 @@
 }
 
 .contact_container .contact_card {
-	width: 40%;
+	width: 80%;
 	border-radius: 50px;
 	background-color: #fff;
 	height: 90%;
 	position: absolute;
 	z-index: 1;
+	overflow-y: auto;
 }
 
 .contact_container .contact_card .contact_card_title {
@@ -608,9 +653,7 @@
 		color: #2A6EB1;
 	}
 
-	.contact_container .contact_card .contact_card_title p {
-		display: none;
-	}
+
 
 	.contact_container .contact_row {
 		width: 90%;
@@ -737,6 +780,12 @@
 	padding: 10px;
 	border-radius: 50px;
 	color: #fff;
+}
+
+.dist_container .detail_button a {
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 @media screen and (max-width: 770px) {

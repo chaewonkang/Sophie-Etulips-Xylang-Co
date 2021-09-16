@@ -15,8 +15,8 @@ const HeaderContainer = styled.div`
   flex-direction: row;
   font-size: 15px;
   color: #fff;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding-right: 40px;
+  padding-left: 40px;
   background-size: 50vw;
   object-fit: cover;
   font-family: 'Urbanist', sans-serif;
@@ -53,7 +53,7 @@ const HeaderLogoContainer = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 10px;
+  margin-left: 15px;
 
   & > img {
     height: 40px;
@@ -97,7 +97,7 @@ const HeaderMenuContainer = styled.div`
     width: 130px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     cursor: pointer;
 
     &:hover {
@@ -133,14 +133,14 @@ const HeaderMenuContainer = styled.div`
     }
   }
 
-  @media screen and (min-width: 770px) and (max-width: 1023px) {
+  @media screen and (min-width: 770px) and (max-width: 1192px) {
     & > .dropdown {
       margin-right: 1em;
       position: relative;
       width: 80px;
       display: flex;
       align-items: center;
-      justify-content: flex-start;
+      justify-content: center;
       font-size: 13px;
 
       &:hover {
@@ -191,12 +191,12 @@ const StyledBurger = styled.button`
 
   div {
     width: 24px;
-    background: #fff;
     height: 0.18rem;
     border-radius: 0px;
     transition: all 0.3s linear;
     position: relative;
     transform-origin: 0.8px;
+    background: ${({ open }) => (open ? '#2a6eb1;' : '#fff')};
 
     :first-child {
       transform: ${({ open }) => (open ? 'rotate(45deg)' : 'rotate(0)')};
@@ -218,8 +218,9 @@ const StyledMenu = styled.nav`
   width: 100vw;
   z-index: 15;
   background: #fff;
-  opacity: 0.9;
+  opacity: 0.95;
   height: 100vh;
+  max-height: 100vh;
   text-align: center;
   padding-top: 30%;
   padding-bottom: 0;
@@ -237,7 +238,8 @@ const StyledMenu = styled.nav`
     font-size: 21px;
     margin-bottom: 0.5em;
     padding: 0.5em;
-    color: #000;
+    color: #2a6eb1;
+    font-weight: bolder;
     display: block;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
@@ -248,7 +250,8 @@ const StyledMenu = styled.nav`
     display: block;
     padding: 0.25em;
     margin-bottom: 0.5em;
-    color: #000;
+    color: #2a6eb1;
+    font-size: 19px;
 
     text-decoration: none;
     transition: color 0.3s linear;

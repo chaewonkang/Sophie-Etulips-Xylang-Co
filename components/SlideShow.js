@@ -1,4 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
+import rightArrow from '../static/images/arrow_right.png';
+import leftArrow from '../static/images/arrow_left.png';
 
 const imagePath2 = [
   `/static/images/main_1.png`,
@@ -36,6 +38,22 @@ function Slideshow() {
   return (
     <>
       <div className='slideshow'>
+        <div className='arrowbox'>
+          <div
+            onClick={() => {
+              if (index < 2 && 0 < index) setIndex(index - 1);
+            }}
+          >
+            <img src={leftArrow}></img>
+          </div>
+          <div
+            onClick={() => {
+              if (index < 2) setIndex(index + 1);
+            }}
+          >
+            <img src={rightArrow}></img>
+          </div>
+        </div>
         <div
           className='slideshowSlider'
           style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
@@ -150,8 +168,9 @@ function Slideshow() {
         .slideshowDots {
           text-align: center;
           position: absolute;
-          bottom: 1em;
+          bottom: 20px;
           right: calc(50% - 36px);
+          z-index: 1000;
         }
 
         .slideshowDot {

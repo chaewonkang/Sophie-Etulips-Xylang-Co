@@ -7,11 +7,16 @@ import { useRouter } from 'next/router';
 const Index = () => {
   const router = useRouter();
   console.log(router);
-  
+
   return (
     <ThemeProvider theme={theme}>
       <PageLayout>
         <SlideShow></SlideShow>
+        <style>{`
+			body {
+				overflow-y: hidden;
+			}
+		`}</style>
       </PageLayout>
     </ThemeProvider>
   );
