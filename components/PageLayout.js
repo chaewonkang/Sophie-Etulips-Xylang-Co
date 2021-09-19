@@ -13,6 +13,7 @@ function PageLayout({ children }) {
     '/address',
     '/contact',
     '/distribution',
+    '/business',
   ];
 
   return (
