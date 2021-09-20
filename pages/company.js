@@ -50,21 +50,92 @@ const Company = () => {
               <div className='img_area'></div>
             </div>
           </div>
-          <div className='company_box'>
-            <div className='text_wrapper'>
-              <h1>회사개요</h1>
-              <span>
-                비지니스 채널은 국내 화장품 업계 최초의 ODM 기업입니다.
-              </span>
-              <p>
-                2012년 3월 이후 한국 마켓 공략을 목표로 관련회사 명경통상을
-                설립하고 종합몰, 오픈마켓, 소셜 커머셜 등 온라인 마켓의 판매를
-                강화하고 있으며 현재 미국상품 소싱에 주력하고 있습니다. 2016년
-                부터 화장지 및 가구의 자사브랜드 Tree Wear 를 런칭하였습니다.
-              </p>
+          <div className='business_container'>
+            <div className='organization_container'>
+              <div className='text_wrapper'>
+                <h1>경영이념</h1>
+                <span>
+                  고객이 최고로 만족할 품질과 가격의 제품만을 개발하고 공급한다
+                </span>
+              </div>
             </div>
-            <div className='img_wrapper'>
-              <div className='img_area'></div>
+            <div className='organization_container'>
+              <div className='organization_title_wrapper'>
+                <h1>Organization</h1>
+              </div>
+              <div>
+                <h1 className='level-1 rectangle'>비즈니스채널</h1>
+                <ol className='level-2-wrapper'>
+                  <li>
+                    <ol className='level-3-wrapper'>
+                      <li>
+                        <h3 className='level-3 rectangle'>Tokyo</h3>
+                        <ol className='level-4-wrapper'>
+                          <li>
+                            <h4 className='level-4 rectangle'>
+                              쯔루하드럭, 후지약품 한화재팬 등 관동지역 거래선
+                              총괄 관리.
+                            </h4>
+                          </li>
+                          <li>
+                            <h4 className='level-4 rectangle'>
+                              진로재팬과 업무제휴, 진로재팬의 전국영업 망을
+                              이용한 잡화류 판매에 주력.
+                            </h4>
+                          </li>
+                        </ol>
+                      </li>
+                      <li>
+                        <h3 className='level-3 rectangle'>Okinawa</h3>
+                        <ol className='level-4-wrapper'>
+                          <li>
+                            <h4 className='level-4 rectangle'>
+                              주식회사 AXE Japan 및 요로즈야 등의 법인 을 설립.
+                            </h4>
+                          </li>
+                          <li>
+                            <h4 className='level-4 rectangle'>
+                              오키나와 및 후쿠오카, 간사이 지역의 거래선을
+                              총괄관리.
+                            </h4>
+                          </li>
+                        </ol>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <ol className='level-3-wrapper'>
+                      <li>
+                        <h3 className='level-3 rectangle'>Guangzhou</h3>
+                        <ol className='level-4-wrapper'>
+                          <li>
+                            <h4 className='level-4 rectangle'>
+                              밸류트리 트레이딩 C&G 글로벌을 설립.
+                            </h4>
+                          </li>
+                          <li>
+                            <h4 className='level-4 rectangle'>
+                              중국 및 홍콩의 제품 소싱 및 출하, 품질 전반을 총괄
+                              관리.
+                            </h4>
+                          </li>
+                        </ol>
+                      </li>
+                      <li>
+                        <h3 className='level-3 rectangle'>Korea</h3>
+                        <ol className='level-4-wrapper'>
+                          <li>
+                            <h4 className='level-4 rectangle'>
+                              주식회사 비즈니스 채널 총괄하에 명경통상에서
+                              한국내 유통 및 수출입 업무 전반을 관리.
+                            </h4>
+                          </li>
+                        </ol>
+                      </li>
+                    </ol>
+                  </li>
+                </ol>
+              </div>
             </div>
           </div>
         </div>
