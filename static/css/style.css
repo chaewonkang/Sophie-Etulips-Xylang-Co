@@ -466,6 +466,8 @@
 /* TOPOF history */
 
 .history_container {
+  margin-top: 100px;
+  margin-bottom: 100px;
   width: 100%;
   height: auto;
   display: flex;
@@ -488,12 +490,16 @@
   line-height: 1.3em;
 }
 
+.history_table {
+  width: 80%;
+  height: auto;
+}
+
 /* ENDOF history */
 
 /* TOPOF business */
 
 .business_container {
-  margin-top: 50px;
   margin-bottom: 50px;
 }
 

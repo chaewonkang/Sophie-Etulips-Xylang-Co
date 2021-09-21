@@ -32,10 +32,16 @@ const History = () => {
             </h1>
           </div>
           <div className='history_table'>
-			  {historyContentKr.map((item, index) => {
-				  
-			  })}
-		  </div>
+            {historyContentKr.map((item, index) => {
+              return (
+                <div>
+                  <span>{item.year}</span>
+                  <span>{item.month}</span>
+                  <span>{item.kr}</span>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </PageLayout>
     </ThemeProvider>
