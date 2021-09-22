@@ -26,7 +26,8 @@ const itemObj = [
     category: '아모레퍼시픽 순플러스',
     description:
       '우수한 기술력과 품질수준을 바탕으로 트렌드 파악, 상품 기획, 개발, 출하, 관리에 이르기까지 체계적인 토털서비스를 제공합니다. 브랜드 기업의 든든한 서포터로서 K뷰티가 세계로 뻗어나갈 수 있도록 지원합니다.',
-    url: 'https://google.com',
+    url: '/business/soonplus',
+    color: '#C36C69',
   },
   {
     img: imagePathArr[0],
@@ -36,6 +37,7 @@ const itemObj = [
     description:
       '우수한 기술력과 품질수준을 바탕으로 트렌드 파악, 상품 기획, 개발, 출하, 관리에 이르기까지 체계적인 토털서비스를 제공합니다. 브랜드 기업의 든든한 서포터로서 K뷰티가 세계로 뻗어나갈 수 있도록 지원합니다.',
     url: '/business/enufproj',
+    color: '#295B4A',
   },
   {
     img: banner,
@@ -51,6 +53,33 @@ const itemObj = [
     title: '잡화류',
     titleEn: 'Etc',
     category: '마스크공장',
+    description:
+      '우수한 기술력과 품질수준을 바탕으로 트렌드 파악, 상품 기획, 개발, 출하, 관리에 이르기까지 체계적인 토털서비스를 제공합니다. 브랜드 기업의 든든한 서포터로서 K뷰티가 세계로 뻗어나갈 수 있도록 지원합니다.',
+    url: 'https://google.com',
+  },
+  {
+    img: banner,
+    title: '잡화류',
+    titleEn: 'Etc',
+    category: '빨아쓰는 페이퍼타올',
+    description:
+      '우수한 기술력과 품질수준을 바탕으로 트렌드 파악, 상품 기획, 개발, 출하, 관리에 이르기까지 체계적인 토털서비스를 제공합니다. 브랜드 기업의 든든한 서포터로서 K뷰티가 세계로 뻗어나갈 수 있도록 지원합니다.',
+    url: 'https://google.com',
+  },
+  {
+    img: banner,
+    title: '잡화류',
+    titleEn: 'Etc',
+    category: '섬유유연제',
+    description:
+      '우수한 기술력과 품질수준을 바탕으로 트렌드 파악, 상품 기획, 개발, 출하, 관리에 이르기까지 체계적인 토털서비스를 제공합니다. 브랜드 기업의 든든한 서포터로서 K뷰티가 세계로 뻗어나갈 수 있도록 지원합니다.',
+    url: 'https://google.com',
+  },
+  {
+    img: banner,
+    title: '잡화류',
+    titleEn: 'Etc',
+    category: '산소계 표백제',
     description:
       '우수한 기술력과 품질수준을 바탕으로 트렌드 파악, 상품 기획, 개발, 출하, 관리에 이르기까지 체계적인 토털서비스를 제공합니다. 브랜드 기업의 든든한 서포터로서 K뷰티가 세계로 뻗어나갈 수 있도록 지원합니다.',
     url: 'https://google.com',
@@ -83,7 +112,9 @@ const Business = () => {
                     <img src={item.img}></img>
                   </div>
                   <div className='text_wrapper'>
-                    <span>{item.category}</span>
+                    <span style={{ color: `${item.color}` }}>
+                      {item.category}
+                    </span>
                     <p>{item.description}</p>
                   </div>
                   <div className='detail_button'>

@@ -600,20 +600,23 @@
   margin-bottom: 50px;
 }
 
-.enuf_container {
+.enuf_container,
+.soon_container {
 	width: 100%;
 	height: auto;
 	min-height: calc(100vh - 80px);
 }
 
-.enuf_container img {
+.enuf_container img,
+.soon_container img {
 	width: 100%;
 	object-fit: cover;
 	z-index: -1;
 	min-height: calc(100vh - 80px);
 }
 
-.enuf_container .enuf_text_wrapper {
+.enuf_container .enuf_text_wrapper,
+.soon_container .soon_text_wrapper {
 	position: absolute;
 	z-index: 1;
 	top: 50%;
@@ -627,6 +630,10 @@
 
 .enuf_container .enuf_text_wrapper h1 {
 	color: #295B4A;
+}
+
+.soon_container .soon_text_wrapper h1 {
+	color: #C36C69;
 }
 
 /* ENDOF business */

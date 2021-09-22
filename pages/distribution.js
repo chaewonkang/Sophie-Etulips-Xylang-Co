@@ -26,6 +26,9 @@ const Company = () => {
         ></Banner>
         <div className='distribution_container'>
           <div className='organization_container'>
+            <div className='organization_title_wrapper'>
+              <h1>Business Organization</h1>
+            </div>
             <div>
               <h1 className='level-1 rectangle'>국내 조직</h1>
               <ol className='level-2-wrapper'>
