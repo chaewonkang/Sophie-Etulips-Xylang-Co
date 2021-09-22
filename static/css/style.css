@@ -222,7 +222,6 @@
 
 .footer_inner {
   height: 80%;
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -251,6 +250,23 @@
 
 .footer_container .footer_inner .copyright {
   margin-top: 10px;
+}
+
+@media screen and (max-width: 770px) {
+	.footer_container {
+		font-size: 12px;
+	}
+
+	.footer_inner {
+		align-items: flex-start;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.footer_inner div {
+		margin-bottom: 5px;
+	}
+
 }
 
 /* ENDOF Footer */

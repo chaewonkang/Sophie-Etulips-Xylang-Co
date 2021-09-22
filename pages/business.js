@@ -13,7 +13,7 @@ const imagePathArr = [
 
 const bannerObj = {
   img: banner,
-  title: '회사개요',
+  title: 'Business',
   text:
     '우수한 기술력과 품질수준을 바탕으로 트렌드 파악, 상품 기획	개발, 출하, 관리에 이르기까지 체계적인 토털 서비스를 제공합니다. 브랜드 기업의 든든한 서포터로서 K뷰티가 세계로 뻗어나갈 수 있도록 지원합니다.',
 };
