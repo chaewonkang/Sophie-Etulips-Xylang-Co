@@ -490,9 +490,106 @@
   line-height: 1.3em;
 }
 
-.history_table {
-  width: 80%;
+.history_table_container {
+  width: 90%;
   height: auto;
+}
+
+.history_table {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 50px;
+}
+
+.history_table .history_table_year {
+	width: 30%;
+	color: #2A6EB1;
+	font-size: 26px;
+	font-weight: bolder;
+}
+
+.history_table .history_table_year span {
+	width: 70%;
+	border-top: 3px solid #2A6EB1;
+	padding-top: 5px;
+}
+
+.history_table .history_table_content {
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	color: #7E7E7E;
+}
+
+.history_table .history_table_content p {
+	margin-top: 0px;
+}
+
+.history_content_detail {
+	width: 100%;
+	display: inline;
+}
+
+.history_content_detail span {
+	width: 30%;
+	font-weight: bolder;
+}
+
+.history_content_detail p {
+	width: 100%;
+	line-height: 1.8em;
+	word-break: keep-all;
+}
+
+@media screen and (max-width: 770px) {
+
+	.history_table {
+		flex-direction: column;
+	}
+
+
+	.history_table .history_table_year {
+		width: 100%;
+		color: #2A6EB1;
+		font-size: 30px;
+		font-weight: bolder;
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.history_table .history_table_year span {
+		width: 100%;		padding-top: 5px;
+	}
+
+	.history_table .history_table_content {
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+		color: #7E7E7E;
+		margin: 0 auto;
+		margin-bottom: 50px;
+	}
+
+	.history_table .history_table_content p {
+		margin-top: 0px;
+
+	}
+
+	.history_content_detail {
+		width: 100%;
+		display: inline;
+	}
+
+	.history_content_detail span {
+		width: 30%;
+		font-weight: bolder;
+	}
+
+	.history_content_detail p {
+		width: 100%;
+	}
+
 }
 
 /* ENDOF history */

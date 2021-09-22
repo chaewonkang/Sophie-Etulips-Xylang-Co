@@ -66,7 +66,7 @@ function Slideshow() {
         </div>
 
         <div className='floatText'>
-          <span>비지니스 채널은 국내 화장품 업계 최초의 ODM 기업입니다</span>
+          <span>비즈니스 채널은 국내 화장품 업계 최초의 ODM 기업입니다</span>
           <p>
             우수한 기술력과 품질수준을 바탕으로 트렌드 파악, 상품 기획, 개발,
             출하, 관리에 이르기까지 체계적인 토털 서비스를 제공합니다

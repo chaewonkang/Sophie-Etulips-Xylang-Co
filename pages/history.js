@@ -31,16 +31,109 @@ const History = () => {
               위대한 역사를 만들고 있습니다.
             </h1>
           </div>
-          <div className='history_table'>
-            {historyContentKr.map((item, index) => {
-              return (
-                <div>
-                  <span>{item.year}</span>
-                  <span>{item.month}</span>
-                  <span>{item.kr}</span>
-                </div>
-              );
-            })}
+          <div className='history_table_container'>
+            <div className='history_table'>
+              <div className='history_table_year'>
+                <span>2011~2017</span>
+              </div>
+              <div className='history_table_content'>
+                {historyContentKr
+                  .filter((item) => {
+                    if (
+                      parseInt(item.year) < 2018 &&
+                      parseInt(item.year) > 2010
+                    )
+                      return item;
+                  })
+                  .map((item, index) => {
+                    return (
+                      <div className='history_content_detail'>
+                        <span>
+                          {item.year} {item.month}
+                        </span>
+                        <p key={item.kr}>{item.kr}</p>
+                      </div>
+                    );
+                  })}
+              </div>
+            </div>
+          </div>
+          <div className='history_table_container'>
+            <div className='history_table'>
+              <div className='history_table_year'>
+                <span>2008~2010</span>
+              </div>
+              <div className='history_table_content'>
+                {historyContentKr
+                  .filter((item) => {
+                    if (
+                      parseInt(item.year) < 2011 &&
+                      parseInt(item.year) > 2009
+                    )
+                      return item;
+                  })
+                  .map((item, index) => {
+                    return (
+                      <div className='history_content_detail'>
+                        <span>
+                          {item.year} {item.month}
+                        </span>
+                        <p key={item.kr}>{item.kr}</p>
+                      </div>
+                    );
+                  })}
+              </div>
+            </div>
+          </div>
+          <div className='history_table_container'>
+            <div className='history_table'>
+              <div className='history_table_year'>
+                <span>2000~2004</span>
+              </div>
+              <div className='history_table_content'>
+                {historyContentKr
+                  .filter((item) => {
+                    if (
+                      parseInt(item.year) < 2005 &&
+                      parseInt(item.year) > 1999
+                    )
+                      return item;
+                  })
+                  .map((item, index) => {
+                    return (
+                      <div className='history_content_detail'>
+                        <span>
+                          {item.year} {item.month}
+                        </span>
+                        <p key={item.kr}>{item.kr}</p>
+                      </div>
+                    );
+                  })}
+              </div>
+            </div>
+          </div>
+          <div className='history_table_container'>
+            <div className='history_table'>
+              <div className='history_table_year'>
+                <span>1997~1999</span>
+              </div>
+              <div className='history_table_content'>
+                {historyContentKr
+                  .filter((item) => {
+                    if (parseInt(item.year) < 2000) return item;
+                  })
+                  .map((item, index) => {
+                    return (
+                      <div className='history_content_detail'>
+                        <span>
+                          {item.year} {item.month}
+                        </span>
+                        <p key={item.kr}>{item.kr}</p>
+                      </div>
+                    );
+                  })}
+              </div>
+            </div>
           </div>
         </div>
       </PageLayout>
