@@ -14,6 +14,7 @@ function PageLayout({ children }) {
     '/contact',
     '/distribution',
     '/business',
+    '/business/enufproj',
   ];
 
   return (

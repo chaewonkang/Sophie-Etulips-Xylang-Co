@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useRouter } from 'next/router';
 import { useState } from 'react';
 import Link from 'next/link';
 import logoB from '../static/images/blue_logo.png';
@@ -287,9 +288,6 @@ const Header = ({ isTransparent }) => {
   ];
 
   const handleClick = (e, path) => {
-    console.log('handleClick');
-    console.log('path');
-    console.log(path);
     setOpen(false);
   };
 
