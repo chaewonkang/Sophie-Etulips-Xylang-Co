@@ -671,7 +671,7 @@
 	height: auto;
 	padding-top: 50px;
 	min-height: calc(100vh - 200px);
-	background-color: #efefef;
+	background-color: #fff;
 }
 
 /* ENDOF cosmetics */
@@ -896,7 +896,7 @@
 
 .dist_container .dist_box {
   width: 33%;
-  background-color: #fff;
+  background-color: #eeeeee;
   border-radius: 50px;
   margin: 30px;
   padding: 40px;
@@ -908,7 +908,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #efefef;
+  background-color: #fff;
   padding-top: 20px;
 }
 
@@ -964,7 +964,7 @@
     flex-direction: column;
     justify-content: space-around;
     flex-flow: wrap;
-    background-color: #efefef;
+    background-color: #fff;
   }
 
   .dist_container .dist_box {
@@ -981,7 +981,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #efefef;
+    background-color: #fff;
     padding-top: 20px;
   }
 

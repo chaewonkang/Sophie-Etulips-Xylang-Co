@@ -17,6 +17,8 @@ function PageLayout({ children }) {
     '/business/enufproj',
     '/business/soonplus',
     '/business/cosmetics',
+    '/business/goods',
+    '/business/food',
   ];
 
   return (

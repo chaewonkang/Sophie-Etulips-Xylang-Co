@@ -119,7 +119,6 @@ const HeaderMenuContainer = styled.div`
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 12px 16px;
     z-index: 1;
-
     font-size: 15px;
   }
 
@@ -127,6 +126,9 @@ const HeaderMenuContainer = styled.div`
     display: block;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+    color: #2a6eb1;
+    font-weight: 700;
+    text-decoration: none;
 
     &:hover {
       text-decoration: none;
@@ -331,16 +333,14 @@ const Header = ({ isTransparent }) => {
             </Link>
           </div>
           <div>
-            <Link href='/business/'>
-              <span>BUSINESS</span>
-            </Link>
+            <span>BUSINESS</span>
             <Link href='/business/cosmetics'>
               <a onClick={() => setOpen(!open)}>화장품</a>
             </Link>
-            <Link href='/business/'>
+            <Link href='/business/goods'>
               <a onClick={() => setOpen(!open)}>잡화류</a>
             </Link>
-            <Link href='/business/'>
+            <Link href='/business/food'>
               <a onClick={() => setOpen(!open)}>식품류</a>
             </Link>
           </div>
@@ -382,10 +382,10 @@ const Header = ({ isTransparent }) => {
             <Link href='/business/cosmetics'>
               <a onClick={() => setOpen(!open)}>화장품</a>
             </Link>
-            <Link href='/business/'>
+            <Link href='/business/goods'>
               <a onClick={() => setOpen(!open)}>잡화류</a>
             </Link>
-            <Link href='/business/'>
+            <Link href='/business/food'>
               <a onClick={() => setOpen(!open)}>식품류</a>
             </Link>
           </div>
