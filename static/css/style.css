@@ -664,6 +664,18 @@
 
 /* ENDOF business */
 
+/* TOPOF cosmetics */
+
+.cosmetic_container {
+	width: 100%;
+	height: auto;
+	padding-top: 50px;
+	min-height: calc(100vh - 200px);
+	background-color: #efefef;
+}
+
+/* ENDOF cosmetics */
+
 /* TOPOF contact */
 
 .contact_container {
@@ -689,7 +701,7 @@
   width: 80%;
   border-radius: 50px;
   background-color: #fff;
-  height: 90%;
+  height: auto;
   position: absolute;
   z-index: 1;
   overflow-y: auto;
@@ -716,6 +728,7 @@
 .contact_container .contact_row {
   width: 80%;
   margin: 0 auto;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -789,7 +802,7 @@
     width: 90%;
     border-radius: 50px;
     background-color: #fff;
-    height: 80%;
+    height: auto;
     position: absolute;
     z-index: 1;
   }
@@ -808,7 +821,8 @@
   .contact_container .contact_row {
     width: 90%;
     margin: 0 auto;
-    display: flex;
+	display: flex;
+	margin-bottom: 30px;
     flex-direction: column;
   }
 
@@ -867,6 +881,7 @@
   height: auto;
   margin-top: 100px;
   margin-bottom: 100px;
+  min-height: calc(100vh - 200px);
 }
 
 .dist_container {
@@ -876,7 +891,6 @@
   flex-direction: row;
   justify-content: space-around;
   flex-flow: wrap;
-  background-color: #efefef;
   overflow-x: hidden;
 }
 

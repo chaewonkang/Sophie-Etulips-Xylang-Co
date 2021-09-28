@@ -15,6 +15,8 @@ function PageLayout({ children }) {
     '/distribution',
     '/business',
     '/business/enufproj',
+    '/business/soonplus',
+    '/business/cosmetics',
   ];
 
   return (

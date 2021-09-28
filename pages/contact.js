@@ -32,9 +32,10 @@ const Contact = () => {
             <div className='contact_card_title'>
               <h1>Contact Us</h1>
               <p>
-                Are you worried about logistics and price competitiveness in
-                handling Korean cosmetics? If you need a partner that can grow
-                together with you, contact us right now.{' '}
+                한국의 훌륭한 상품들을 관리하기 위한 물류와 가격 경쟁을 걱정하고
+                계신가요? <br />
+                함께 성장할 무역 파트너를 찾으신다면, 비즈니스채널의 토털 무역
+                솔루션을 경험해 보세요.
               </p>
             </div>
             <div className='contact_row'>

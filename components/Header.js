@@ -334,7 +334,7 @@ const Header = ({ isTransparent }) => {
             <Link href='/business/'>
               <span>BUSINESS</span>
             </Link>
-            <Link href='/business/'>
+            <Link href='/business/cosmetics'>
               <a onClick={() => setOpen(!open)}>화장품</a>
             </Link>
             <Link href='/business/'>
@@ -379,7 +379,7 @@ const Header = ({ isTransparent }) => {
         <div className='dropdown'>
           <span>BUSINESS</span>
           <div className='dropdown-content'>
-            <Link href='/business/'>
+            <Link href='/business/cosmetics'>
               <a onClick={() => setOpen(!open)}>화장품</a>
             </Link>
             <Link href='/business/'>
