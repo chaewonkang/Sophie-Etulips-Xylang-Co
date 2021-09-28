@@ -3,6 +3,7 @@ import PageLayout from '../components/PageLayout';
 import { ThemeProvider } from 'styled-components';
 import theme from '../styles/theme';
 import banner from '../static/images/banner_1.png';
+import mainImg from '../static/images/company_intro.jpeg';
 import { useRouter } from 'next/router';
 
 const bannerObj = {
@@ -49,7 +50,9 @@ const Company = () => {
               </p>
             </div>
             <div className='img_wrapper'>
-              <div className='img_area'></div>
+              <div className='img_area'>
+                <img src={mainImg}></img>
+              </div>
             </div>
           </div>
           <div className='business_container'>

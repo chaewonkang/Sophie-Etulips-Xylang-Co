@@ -44,10 +44,7 @@ const Contact = () => {
                 </div>
                 <div className='contact_row_info'>
                   <span>Address</span>
-                  <p>
-                    10874 #38, Hermann House02, 134, Chaekhyanggisup-gil,
-                    Paju-Si, Gyeonggi-do, Korea
-                  </p>
+                  <p>경기도 파주시 책향기숲길 132 헤르만하우스02 38호</p>
                 </div>
               </div>
               <div className='contact_row_item'>
@@ -68,7 +65,7 @@ const Contact = () => {
                 </div>
                 <div className='contact_row_info'>
                   <span>Business Phone</span>
-                  <p>+82 010-5115-5799</p>
+                  <p>031-908-7346</p>
                 </div>
               </div>
               <div className='contact_row_item'>
@@ -77,9 +74,7 @@ const Contact = () => {
                 </div>
                 <div className='contact_row_info'>
                   <span>Working Hours</span>
-                  <p>
-                    Monday to Friday : 10:00~19:00 / OFF : Sat, Sun, Hoildays{' '}
-                  </p>
+                  <p>월-금 : 10:00~19:00 / 주말, 공휴일 휴무 </p>
                 </div>
               </div>
             </div>

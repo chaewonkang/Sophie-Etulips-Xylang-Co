@@ -9,6 +9,10 @@ import historyContentKr from '../constants/historyContentKr';
 const imagePathArr = [
   '../static/images/enuf_product.jpeg',
   '../static/images/soon_product.png',
+  '../static/images/mask.jpeg',
+  '../static/images/tissue.jpeg',
+  '../static/images/detergent.jpeg',
+  '../static/images/food.jpeg',
 ];
 
 const bannerObj = {
@@ -40,7 +44,7 @@ const itemObj = [
     color: '#295B4A',
   },
   {
-    img: banner,
+    img: imagePathArr[5],
     title: '식품류',
     titleEn: 'Food',
     category: '식품류',
@@ -48,7 +52,7 @@ const itemObj = [
     url: 'https://google.com',
   },
   {
-    img: banner,
+    img: imagePathArr[2],
     title: '잡화류',
     titleEn: 'Etc',
     category: '마스크공장',
@@ -57,7 +61,7 @@ const itemObj = [
     url: 'https://google.com',
   },
   {
-    img: banner,
+    img: imagePathArr[3],
     title: '잡화류',
     titleEn: 'Etc',
     category: '제지류',
@@ -66,7 +70,7 @@ const itemObj = [
     url: 'https://google.com',
   },
   {
-    img: banner,
+    img: imagePathArr[4],
     title: '잡화류',
     titleEn: 'Etc',
     category: '세제류',

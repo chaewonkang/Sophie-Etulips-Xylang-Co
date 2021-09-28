@@ -334,13 +334,13 @@ const Header = ({ isTransparent }) => {
             <Link href='/business/'>
               <span>BUSINESS</span>
             </Link>
-            <Link href='/greeting/'>
+            <Link href='/business/'>
               <a onClick={() => setOpen(!open)}>화장품</a>
             </Link>
-            <Link href='/history/'>
+            <Link href='/business/'>
               <a onClick={() => setOpen(!open)}>잡화류</a>
             </Link>
-            <Link href='/address/'>
+            <Link href='/business/'>
               <a onClick={() => setOpen(!open)}>식품류</a>
             </Link>
           </div>
@@ -382,10 +382,10 @@ const Header = ({ isTransparent }) => {
             <Link href='/business/'>
               <a onClick={() => setOpen(!open)}>화장품</a>
             </Link>
-            <Link href='/greeting/'>
+            <Link href='/business/'>
               <a onClick={() => setOpen(!open)}>잡화류</a>
             </Link>
-            <Link href='/history/'>
+            <Link href='/business/'>
               <a onClick={() => setOpen(!open)}>식품류</a>
             </Link>
           </div>
