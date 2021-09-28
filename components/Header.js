@@ -334,6 +334,15 @@ const Header = ({ isTransparent }) => {
             <Link href='/business/'>
               <span>BUSINESS</span>
             </Link>
+            <Link href='/greeting/'>
+              <a onClick={() => setOpen(!open)}>화장품</a>
+            </Link>
+            <Link href='/history/'>
+              <a onClick={() => setOpen(!open)}>잡화류</a>
+            </Link>
+            <Link href='/address/'>
+              <a onClick={() => setOpen(!open)}>식품류</a>
+            </Link>
           </div>
           <div>
             <Link href='/distribution/'>
@@ -368,9 +377,18 @@ const Header = ({ isTransparent }) => {
           </div>
         </div>
         <div className='dropdown'>
-          <Link href='/business/'>
-            <span>BUSINESS</span>
-          </Link>
+          <span>BUSINESS</span>
+          <div className='dropdown-content'>
+            <Link href='/business/'>
+              <a onClick={() => setOpen(!open)}>화장품</a>
+            </Link>
+            <Link href='/greeting/'>
+              <a onClick={() => setOpen(!open)}>잡화류</a>
+            </Link>
+            <Link href='/history/'>
+              <a onClick={() => setOpen(!open)}>식품류</a>
+            </Link>
+          </div>
         </div>
         <div className='dropdown'>
           <Link href='/distribution'>

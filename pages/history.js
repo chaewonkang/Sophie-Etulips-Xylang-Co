@@ -34,16 +34,21 @@ const History = () => {
           <div className='history_table_container'>
             <div className='history_table'>
               <div className='history_table_year'>
-                <span>2011~2017</span>
+                <span>2013~2021</span>
               </div>
               <div className='history_table_content'>
                 {historyContentKr
                   .filter((item) => {
                     if (
-                      parseInt(item.year) < 2018 &&
-                      parseInt(item.year) > 2010
+                      parseInt(item.year) < 2021 &&
+                      parseInt(item.year) > 2012
                     )
                       return item;
+                  })
+                  .sort(function (a, b) {
+                    if (a.year > b.year) return -1;
+                    if (a.year === b.year) return 0;
+                    if (a.year < b.year) return 1;
                   })
                   .map((item, index) => {
                     return (
@@ -61,16 +66,21 @@ const History = () => {
           <div className='history_table_container'>
             <div className='history_table'>
               <div className='history_table_year'>
-                <span>2008~2010</span>
+                <span>2008~2012</span>
               </div>
               <div className='history_table_content'>
                 {historyContentKr
                   .filter((item) => {
                     if (
-                      parseInt(item.year) < 2011 &&
+                      parseInt(item.year) < 2013 &&
                       parseInt(item.year) > 2009
                     )
                       return item;
+                  })
+                  .sort(function (a, b) {
+                    if (a.year > b.year) return -1;
+                    if (a.year === b.year) return 0;
+                    if (a.year < b.year) return 1;
                   })
                   .map((item, index) => {
                     return (
@@ -99,6 +109,11 @@ const History = () => {
                     )
                       return item;
                   })
+                  .sort(function (a, b) {
+                    if (a.year > b.year) return -1;
+                    if (a.year === b.year) return 0;
+                    if (a.year < b.year) return 1;
+                  })
                   .map((item, index) => {
                     return (
                       <div className='history_content_detail'>
@@ -121,6 +136,11 @@ const History = () => {
                 {historyContentKr
                   .filter((item) => {
                     if (parseInt(item.year) < 2000) return item;
+                  })
+                  .sort(function (a, b) {
+                    if (a.year > b.year) return -1;
+                    if (a.year === b.year) return 0;
+                    if (a.year < b.year) return 1;
                   })
                   .map((item, index) => {
                     return (

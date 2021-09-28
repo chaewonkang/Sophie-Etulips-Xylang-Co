@@ -172,6 +172,30 @@ const historyContkrtKr = [
       '국내 전자상거래 통신업 등록 및 온라인 사업 확대 / 이마트몰, 롯데닷컴, 11번가 등',
     group: -1,
   },
+  {
+    index: 21,
+    year: '2009',
+    month: '',
+    en: 'LG Chemical',
+    kr: '한국으로 본사 이전 및 주식회사 비즈니스채널 설립',
+    group: -1,
+  },
+  {
+    index: 22,
+    year: '2020',
+    month: '',
+    en: 'LG Chemical',
+    kr: 'KF94 인증 마스크공장 설립',
+    group: -1,
+  },
+  {
+    index: 23,
+    year: '2021',
+    month: '',
+    en: 'LG Chemical',
+    kr: '아모레퍼시픽 순플러스 및 이너프프로젝트 브랜드의 일본공식 대리점 취득',
+    group: -1,
+  },
 ];
 
 export default historyContkrtKr;

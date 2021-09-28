@@ -324,8 +324,8 @@
   }
 
   .company_box .text_wrapper {
-    width: calc(100% - 5em);
-    max-width: calc(100% - 5em);
+    width: calc(100% - 4em);
+    max-width: calc(100% - 4em);
     height: 100%;
     padding: 2.5em;
     margin: 0;
@@ -337,7 +337,7 @@
   }
 
   .company_box .img_wrapper .img_area {
-    width: 80%;
+    width: 90%;
     height: 100%;
     border-radius: 50px;
     margin: 0 auto;
@@ -353,12 +353,13 @@
   width: 70%;
   height: auto;
   display: flex;
+  min-height: calc(100vh - 320px);
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   position: relative;
 }
 
@@ -405,7 +406,7 @@
 
 @media screen and (max-width: 770px) {
   .greeting_container {
-    width: 80%;
+	width: calc(100vw - 4em);
     height: auto;
     display: flex;
     flex-direction: column;
@@ -575,11 +576,12 @@
 	}
 
 	.history_table .history_table_year span {
-		width: 100%;		padding-top: 5px;
+		width: 100%;
+		padding-top: 5px;
 	}
 
 	.history_table .history_table_content {
-		width: 80%;
+		width: calc(100vw - 4em);
 		display: flex;
 		flex-direction: column;
 		color: #7E7E7E;
