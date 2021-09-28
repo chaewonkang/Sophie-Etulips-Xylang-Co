@@ -1,9 +1,19 @@
+html, body {
+	margin: 0 auto;
+	max-width: 1640px;
+}
+
 #body {
   width: 100%;
   height: auto;
   overflow-y: auto;
   overflow-x: hidden;
   font-family: 'Urbanist', sans-serif;
+margin: 0 auto;
+}
+
+* {
+	max-width: 1640px;
 }
 
 /* TOPOF COMMON */
@@ -645,13 +655,28 @@
 .soon_container .soon_text_wrapper {
 	position: absolute;
 	z-index: 1;
-	top: 50%;
-	width: 90%;
-	margin-left: 5%;
-	margin-right: 5%;
+	top: 650px;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
 	line-height: 1.8em;
 	text-align: center;
 	word-break: keep-all;
+}
+
+@media screen and (min-width: 992px) {
+	.enuf_container .enuf_text_wrapper,
+.soon_container .soon_text_wrapper {
+	position: absolute;
+	z-index: 1;
+	top: 800px;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	line-height: 1.8em;
+	text-align: center;
+	word-break: keep-all;
+}
 }
 
 .enuf_container .enuf_text_wrapper h1 {
@@ -670,7 +695,7 @@
 	width: 100%;
 	height: auto;
 	padding-top: 50px;
-	min-height: calc(100vh - 200px);
+	min-height: calc(100vh - 400px);
 	background-color: #fff;
 }
 
