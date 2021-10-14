@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
           href='https://fonts.googleapis.com/css2?family=Urbanist:wght@500;600&display=swap'
           rel='stylesheet'
         ></link>
-        <title>BUSINESS CHANNEL Ltd.</title>
+        <title>Sophie Etulips Xylang Co.,</title>
       </Head>
       <Component {...pageProps} />
     </>

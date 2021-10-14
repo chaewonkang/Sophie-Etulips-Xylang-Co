@@ -1,23 +1,17 @@
-import PageLayout from '../components/PageLayout';
-import SlideShow from '../components/SlideShow';
 import { ThemeProvider } from 'styled-components';
 import theme from '../styles/theme';
 import { useRouter } from 'next/router';
+import { useState } from 'react';
 
 const Index = () => {
   const router = useRouter();
-  console.log(router);
+  const [autoPlay, setAutoPlay] = useState(true);
 
   return (
     <ThemeProvider theme={theme}>
-      <PageLayout>
-        <SlideShow></SlideShow>
-        <style>{`
-			body {
-				overflow-y: hidden;
-			}
-		`}</style>
-      </PageLayout>
+      {/* <audio controls autoPlay src='/sound.mp3' />
+      <p>여러분을 초대합니다.</p> */}
+      coming soon
     </ThemeProvider>
   );
 };
