@@ -9,9 +9,28 @@ const Index = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      {/* <audio controls autoPlay src='/sound.mp3' />
-      <p>여러분을 초대합니다.</p> */}
-      coming soon
+      <div className='bgContainer'>
+        <img src='../static/images/background.png'></img>
+      </div>
+      <div className='cardContainer'>
+        <img src='../static/images/card.png'></img>
+      </div>
+      <div className='mirrorContainer'>
+        <img src='../static/images/mirror.png'></img>
+      </div>
+      <div className='textContainer'>
+        <div>
+          <img src='../static/images/textKr.png'></img>
+        </div>
+        <div>
+          <img src='../static/images/textEn.png'></img>
+        </div>
+      </div>
+      <div className='invitationBtn'></div>
+      <div className='invitationText'>
+        <img src='../static/images/textBtn.png'></img>
+      </div>
+      <audio controls autoPlay src='/sound.mp3' />
     </ThemeProvider>
   );
 };
