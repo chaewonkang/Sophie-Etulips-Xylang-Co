@@ -4,25 +4,46 @@ html, body {
 	overflow: hidden;
 }
 
+#mobile,
+#ipad {
+	display: none;
+}
+
 #body {
   width: 100%;
   height: 100%;
   overflow: hidden;
   font-family: 'Urbanist', sans-serif;
-
 }
+
+
+@-webkit-keyframes gradient {
+    0%{background-position:0% 58%}
+    50%{background-position:100% 43%}
+    100%{background-position:0% 58%}
+}
+@-moz-keyframes gradient {
+    0%{background-position:0% 58%}
+    50%{background-position:100% 43%}
+    100%{background-position:0% 58%}
+}
+@keyframes gradient {
+    0%{background-position:0% 58%}
+    50%{background-position:100% 43%}
+    100%{background-position:0% 58%}
+}
+
 
 .bgContainer {
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 	overflow: hiden;
 	z-index: -1;
-
-}
-
-.bgContainer img {
-	width: 100%;
-	height: 100%;
+    background: linear-gradient(78deg, #ff0, rgb(83, 153, 100), orange, #e651a8);
+	background-size: 200% 200%;
+    -webkit-animation: gradient 10s ease infinite;
+    -moz-animation: gradient 10s ease infinite;
+    animation: gradient 10s ease infinite;
 }
 
 .cardContainer {
@@ -30,12 +51,27 @@ html, body {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 }
 
 .cardContainer img {
 	height: 100%;
+	object-fit: cover;
+}
+
+.titleContainer {
+	z-index: 3;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 100vw;
+}
+
+.titleContainer img {
+	width: 100%;
+	max-width: 60vw;
+	object-fit: contain;
 }
 
 .mirrorContainer {
@@ -44,6 +80,11 @@ html, body {
 	position: absolute;
 	bottom: -30px;
 	right: -200px;
+	display: block;
+    -webkit-animation: fadeInFromNone 3s infinite;
+    -moz-animation: fadeInFromNone 3s infinite;
+    -o-animation: fadeInFromNone 3s infinite;
+    animation: fadeInFromNone 3s infinite;
 }
 
 .mirrorContainer img {
@@ -63,8 +104,38 @@ html, body {
 }
 
 .textContainer div {
-
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding-right: 30px;
+	margin-bottom: 20px;
 }
+
+.textContainer div img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	max-width: 600px;
+	mix-blend-mode: difference;
+}
+
+.cursor{
+	position: fixed;
+	top: 0;
+	background-color:white;
+	width: 1.5vw;
+	height: 230vh;
+	transform: scale(1.04) translateX(-50%);
+	transform-origin: center;
+	opacity: 0.6;
+	filter: blur(0.5vw);
+	  overflow: hidden;
+	  will-change: left;
+	  z-index: 10000;
+	  pointer-events: none;
+  }
 
 
 @-webkit-keyframes Gradiential {
@@ -90,6 +161,77 @@ html, body {
 	}
   }
 
+
+
+
+@-webkit-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0.8;
+    }
+
+    50% {
+        display: block;
+        opacity: 0.3;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeInFromNone {
+	0% {
+        display: none;
+        opacity: 0.8;
+    }
+
+    50% {
+        display: block;
+        opacity: 0.3;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeInFromNone {
+	0% {
+        display: none;
+        opacity: 0.8;
+    }
+
+    50% {
+        display: block;
+        opacity: 0.3;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFromNone {
+	0% {
+        display: none;
+        opacity: 0.8;
+    }
+
+    50% {
+        display: block;
+        opacity: 0.5;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
   .invitationBtn {
 	width: 200px;
 	height: 150px;
@@ -103,8 +245,8 @@ html, body {
 	-webkit-filter: blur(10px);
 	opacity: 80%;
 	position: fixed;
-	bottom: 5%;
-	left: 2.5%;
+	bottom: 55px;
+	left: 25px;
 	-webkit-animation: Gradiential 3s ease infinite;
 	animation: Gradiential 3s ease infinite;
   }
@@ -119,9 +261,274 @@ html, body {
 	  z-index: 100;
 	  background-size: 400% 400%;
 	  position: fixed;
-	  bottom: 0.7%;
-	  left: 3.5%;
-
+	  bottom: 10px;
+	  left: 45px;
   }
 
-/* TOPOF COMMON */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+/* Styles */
+}
+
+
+/* Desktops and laptops ----------- */
+@media screen and (max-width : 1240px) {
+	.titleContainer img {
+		width: 100%;
+		max-width: 100vw;
+		object-fit: contain;
+	}
+
+	.cardContainer {
+		z-index: 2;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100%;
+	}
+
+	.cardContainer img {
+		height: 100vh;
+		object-fit: contain;
+	}
+
+	.invitationBtn {
+		width: 150px;
+		height: 100px;
+		-moz-border-radius: 75px / 50px;
+		-webkit-border-radius: 75px / 50px;
+		border-radius: 75px / 50px;
+		z-index: 10;
+		background: linear-gradient(4deg, #ffffff, #f1ffcc);
+		background-size: 400% 400%;
+		filter: blur(10px);
+		-webkit-filter: blur(10px);
+		opacity: 80%;
+		position: fixed;
+		bottom: 35px;
+		left: 25px;
+		-webkit-animation: Gradiential 3s ease infinite;
+		animation: Gradiential 3s ease infinite;
+	  }
+
+	  .invitationText {
+		z-index: 100;
+		width: 150px;
+		height: 100px;
+		-moz-border-radius: 75px / 50px;
+		-webkit-border-radius: 75px / 50px;
+		border-radius: 75px / 50px;
+		z-index: 100;
+		background-size: 400% 400%;
+		position: fixed;
+		bottom: 35px;
+		left: 50px;
+		display: flex;
+	}
+
+	.invitationText img {
+		width: 70%;
+		object-fit: contain;
+	}
+
+	.textContainer div img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		max-width: 600px;
+		mix-blend-mode: difference;
+	}
+
+	.textContainer {
+		width: 80%;
+		z-index: 3;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.textContainer div {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		padding-right: 30px;
+		margin-bottom: 20px;
+	}
+
+	.textContainer div img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		max-width: 600px;
+		mix-blend-mode: difference;
+	}
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media screen and (max-width : 768px)
+{
+
+	.textContainer {
+		width: 60vw;
+		z-index: 3;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.textContainer div {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.textContainer div img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		max-width: 600px;
+	}
+
+	#mobile,
+	#desktop {
+		display: none;
+	}
+
+	#ipad {
+		display: block;
+	}
+
+	.cardContainer img {
+		height: 100vh;
+		width: 100vw;
+		-o-object-fit: contain;
+		object-fit: cover;
+	}
+}
+
+/* iPads (landscape) ----------- */
+@media screen and (max-width : 550px) {
+	#desktop,
+	#ipad {
+		display: none;
+	}
+
+	#mobile {
+		display: block;
+	}
+
+	.mirrorContainer {
+		width: 100%;
+		z-index: 1;
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+		display: block;
+		-webkit-animation: fadeInFromNone 3s infinite;
+		animation: fadeInFromNone 3s infinite;
+	}
+
+	.cardContainer img {
+		height: 100vh;
+		width: 100vw;
+		-o-object-fit: contain;
+		object-fit: cover;
+	}
+
+	.invitationBtn {
+		width: 150px;
+		height: 100px;
+		-moz-border-radius: 75px / 50px;
+		-webkit-border-radius: 75px / 50px;
+		border-radius: 75px / 50px;
+		z-index: 10;
+		background: linear-gradient(4deg, #ffffff, #f1ffcc);
+		background-size: 400% 400%;
+		filter: blur(10px);
+		-webkit-filter: blur(10px);
+		opacity: 80%;
+		position: fixed;
+		top: 15px;
+		left: 60%;
+		-webkit-animation: Gradiential 3s ease infinite;
+		animation: Gradiential 3s ease infinite;
+	  }
+
+	  .invitationText {
+		z-index: 100;
+		width: 150px;
+		height: 100px;
+		-moz-border-radius: 75px / 50px;
+		-webkit-border-radius: 75px / 50px;
+		border-radius: 75px / 50px;
+		z-index: 100;
+		background-size: 400% 400%;
+		position: fixed;
+		top: 15px;
+		left: 64%;
+		display: flex;
+	}
+
+	.invitationText img {
+		width: 70%;
+		object-fit: contain;
+	}
+
+	.textContainer {
+		width: 100%;
+		z-index: 3;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.textContainer div {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		padding-right: 30px;
+		margin-bottom: 20px;
+	}
+
+	.textContainer div img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		max-width: 600px;
+		mix-blend-mode: difference;
+	}
+}
+
