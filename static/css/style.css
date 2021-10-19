@@ -500,7 +500,7 @@ and (max-width : 320px) {
 		-moz-border-radius: 75px / 50px;
 		-webkit-border-radius: 75px / 50px;
 		border-radius: 75px / 50px;
-		z-index: 10;
+		z-index: 1000000;
 		background: linear-gradient(4deg, #ffffff, #f1ffcc);
 		background-size: 400% 400%;
 		filter: blur(10px);
@@ -520,7 +520,7 @@ and (max-width : 320px) {
 		-moz-border-radius: 75px / 50px;
 		-webkit-border-radius: 75px / 50px;
 		border-radius: 75px / 50px;
-		z-index: 100;
+		z-index: 1000001;
 		background-size: 400% 400%;
 		position: fixed;
 		top: 3px;
@@ -537,7 +537,7 @@ and (max-width : 320px) {
 		width: 100%;
 		z-index: 3;
 		position: absolute;
-		bottom: 10vh;
+		bottom: 15vh;
 		right: 0;
 		display: flex;
 		flex-direction: column;
