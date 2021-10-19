@@ -444,6 +444,23 @@ and (max-width : 320px) {
 
 /* iPads (landscape) ----------- */
 @media screen and (max-width : 550px) {
+
+	html, body {
+		margin: 0 auto;
+		position: relative;
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+
+	#body {
+	  width: 100%;
+	  height: 100%;
+	  overflow-x: hidden;
+	  overflow-y: auto;
+	  font-family: 'Urbanist', sans-serif;
+	}
+
+
 	#desktop,
 	#ipad {
 		display: none;
