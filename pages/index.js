@@ -21,10 +21,11 @@ const Index = () => {
         onClick={() => {
           setPlaying(true);
           audioRef.current.play();
-          console.log(`mouseTouch ${playing}`);
         }}
       >
-        <Cursor></Cursor>
+        <div className='desktop'>
+          <Cursor></Cursor>
+        </div>
         <div className='bgContainer'></div>
         <div className='titleContainer'>
           <img src='../static/images/title.png'></img>
@@ -43,10 +44,17 @@ const Index = () => {
           </div>
         </div>
         <div className='invitationBtn'></div>
-        <div className='invitationText'>
-          <img src='../static/images/textBtn.png'></img>
+        <a
+          href='https://fldjfs.wixsite.com/s-e-x-co-reservation'
+          target='_blank'
+        >
+          <div className='invitationText'>
+            <img src='../static/images/textBtn.png'></img>
+          </div>
+        </a>
+        <div className='audio_player'>
+          <audio autoPlay src='/sound.mp3' ref={audioRef} />
         </div>
-        <audio controls autoPlay src='/sound.mp3' ref={audioRef} />
       </div>
     </ThemeProvider>
   );
