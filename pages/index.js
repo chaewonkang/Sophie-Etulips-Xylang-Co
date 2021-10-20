@@ -27,9 +27,6 @@ const Index = () => {
           <Cursor></Cursor>
         </div>
         <div className='bgContainer'></div>
-        <div className='titleContainer'>
-          <img src='../static/images/title.png'></img>
-        </div>
         <div className='cardContainer'>
           <img id='mobile' src='../static/images/mobile_card.png'></img>
           <img id='ipad' src='../static/images/ipad_card.png'></img>
