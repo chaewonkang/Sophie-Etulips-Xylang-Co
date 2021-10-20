@@ -44,7 +44,7 @@ html, body {
 	height: 100vh;
 	overflow: hiden;
 	z-index: -1;
-    background: linear-gradient(78deg, rgb(26, 6, 0), rgb(9, 50, 154), rgb(255, 213, 247), rgb(253, 255, 206), #ffffff);
+    background: linear-gradient(78deg,rgb(2, 4, 7), rgb(255, 216, 236), rgb(26, 6, 0), rgb(16, 43, 113), rgb(255, 240, 208), #ffffff);
 	background-size: 400% 400%;
     -webkit-animation: gradient 10s ease infinite;
     -moz-animation: gradient 10s ease infinite;
