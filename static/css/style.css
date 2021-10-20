@@ -44,8 +44,8 @@ html, body {
 	height: 100vh;
 	overflow: hiden;
 	z-index: -1;
-    background: linear-gradient(78deg, rgb(3, 0, 23), rgb(67, 100, 182), rgb(137, 196, 160), rgb(255, 213, 247), #ffffff);
-	background-size: 200% 200%;
+    background: linear-gradient(78deg, rgb(26, 6, 0), rgb(9, 50, 154), rgb(255, 213, 247), rgb(253, 255, 206), #ffffff);
+	background-size: 400% 400%;
     -webkit-animation: gradient 10s ease infinite;
     -moz-animation: gradient 10s ease infinite;
     animation: gradient 10s ease infinite;
@@ -62,7 +62,7 @@ html, body {
 
 .cardContainer img {
 	height: 100%;
-	object-fit: cover;
+	object-fit: fill;
 }
 
 .titleContainer {
@@ -76,7 +76,7 @@ html, body {
 .titleContainer img {
 	width: 100%;
 	max-width: 70vw;
-	object-fit: contain;
+	object-fit: fill;
 }
 
 .mirrorContainer {
@@ -94,7 +94,7 @@ html, body {
 
 .mirrorContainer img {
 	width: 100%;
-	object-fit: cover;
+	object-fit: fill;
 }
 
 .textContainer {
@@ -121,8 +121,8 @@ html, body {
 .textContainer div img {
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
-	max-width: 1200px;
+	object-fit: contain;
+	max-width: 600px;
 	mix-blend-mode: difference;
 }
 
@@ -294,7 +294,7 @@ and (max-width : 320px) {
 .titleContainer img {
 	width: 100%;
 	max-width: 80vw;
-	object-fit: contain;
+	object-fit: fill;
 }
 }
 
@@ -305,7 +305,7 @@ and (max-width : 320px) {
 		max-width: 60vw;
 		margin-top: 18px;
 		transform: rotate(10deg);
-		object-fit: contain;
+		object-fit: fill;
 	}
 
 	.cursor {
@@ -323,7 +323,7 @@ and (max-width : 320px) {
 
 	.cardContainer img {
 		height: 100vh;
-		object-fit: contain;
+		object-fit: fill;
 	}
 
 	.invitationBtn {
@@ -368,7 +368,7 @@ and (max-width : 320px) {
 	.textContainer div img {
 		width: 100%;
 		height: 100%;
-		object-fit: cover;
+		object-fit: contain;
 		max-width: 500px;
 		mix-blend-mode: difference;
 	}
@@ -394,13 +394,6 @@ and (max-width : 320px) {
 		margin-bottom: 20px;
 	}
 
-	.textContainer div img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		max-width: 600px;
-		mix-blend-mode: difference;
-	}
 
 }
 
@@ -416,7 +409,7 @@ and (max-width : 320px) {
 		width: 100%;
 		max-width: 90vw;
 		transform: rotate(15deg);
-		object-fit: contain;
+		object-fit: fill;
 	}
 
 	.cursor {
@@ -435,7 +428,7 @@ and (max-width : 320px) {
 	.cardContainer img {
 		height: 100vh;
 		width: 100vw;
-		object-fit: cover;
+		object-fit: fill;
 	}
 
 	.invitationBtn {
@@ -480,7 +473,7 @@ and (max-width : 320px) {
 	.textContainer div img {
 		width: 100%;
 		height: 100%;
-		object-fit: cover;
+		object-fit: fill;
 		max-width: 500px;
 		mix-blend-mode: difference;
 	}
@@ -509,7 +502,7 @@ and (max-width : 320px) {
 	.textContainer div img {
 		width: 100%;
 		height: 100%;
-		object-fit: cover;
+		object-fit: fill;
 		max-width: 600px;
 		mix-blend-mode: difference;
 	}
@@ -566,7 +559,7 @@ and (max-width : 320px) {
 	.textContainer div img {
 		width: 100%;
 		height: 100%;
-		object-fit: cover;
+		object-fit: fill;
 		max-width: 600px;
 	}
 
@@ -582,8 +575,8 @@ and (max-width : 320px) {
 	.cardContainer img {
 		height: 100vh;
 		width: 100vw;
-		-o-object-fit: contain;
-		object-fit: cover;
+		-o-object-fit: fill;
+		object-fit: fill;
 	}
 }
 
@@ -629,8 +622,8 @@ and (max-width : 320px) {
 	.titleContainer img {
 		width: 100%;
 		max-width: 100vw;
-		-o-object-fit: contain;
-		object-fit: contain;
+		-o-object-fit: fill;
+		object-fit: fill;
 		transform: rotate(15deg);
 		margin-top: 20px;
 	}
@@ -657,8 +650,8 @@ and (max-width : 320px) {
 	.cardContainer img {
 		height: 100vh;
 		width: 100vw;
-		-o-object-fit: contain;
-		object-fit: cover;
+		-o-object-fit: fill;
+		object-fit: fill;
 	}
 
 	.invitationBtn {
@@ -726,8 +719,8 @@ and (max-width : 320px) {
 	.textContainer div img {
 		width: 90%;
 		height: 100%;
-		-o-object-fit: cover;
-		object-fit: cover;
+		-o-object-fit: fill;
+		object-fit: fill;
 		max-width: 370px;
 		mix-blend-mode: difference;
 	}
