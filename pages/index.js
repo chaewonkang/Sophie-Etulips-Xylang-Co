@@ -41,14 +41,11 @@ const Index = () => {
           </div>
         </div>
         <div className='invitationBtn'></div>
-        <a
-          href='https://fldjfs.wixsite.com/s-e-x-co-reservation'
-          target='_blank'
-        >
-          <div className='invitationText'>
-            <img src='../static/images/textBtn.png'></img>
-          </div>
-        </a>
+
+        <div className='invitationText'>
+          <img src='../static/images/textBtn.png'></img>
+        </div>
+
         <div className='audio_player'>
           <audio autoPlay src='/sound.mp3' ref={audioRef} />
         </div>
