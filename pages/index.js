@@ -43,7 +43,7 @@ const Index = () => {
         <div className='invitationBtn'></div>
 
         <div className='invitationText'>
-          <img src='../static/images/textBtn.png'></img>
+          <img src='../static/images/textBtn.svg'></img>
         </div>
 
         <div className='audio_player'>
